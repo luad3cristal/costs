@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 import { BsPencil, BsFillTrashFill } from "react-icons/bs";
 
 function projectCard({ id, name, budget, category, handleRemove }) {
+  const remove = (e) => {
+    e.preventDefault();
+    handleRemove(id);
+  };
+
   return (
     <div className={S.project_card}>
       <h4>{name}</h4>
@@ -18,7 +23,7 @@ function projectCard({ id, name, budget, category, handleRemove }) {
         <Link to="/">
           <BsPencil /> Editar
         </Link>
-        <button>
+        <button onClick={remove}>
           <BsFillTrashFill /> Excluir
         </button>
       </div>
