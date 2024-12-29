@@ -4,7 +4,7 @@ import Projects from "./components/pages/Projects.jsx";
 import Company from "./components/pages/Company.jsx";
 import Contact from "./components/pages/Contact.jsx";
 import NewProject from "./components/pages/NewProject";
-import Project from "./components/pages/project.jsx";
+import Project from "./components/pages/Project.jsx";
 
 import Container from "./components/layout/container.jsx";
 import Navbar from "./components/layout/navbar.jsx";
